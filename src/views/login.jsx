@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button, FormControl, Alert } from 'react-bootstrap';
+import { Button, FormControl, Alert, Panel } from 'react-bootstrap';
 import { Login as UserLogin } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 
@@ -115,6 +115,7 @@ class Login extends Component {
                     />
                     <Button bsStyle="primary" bsSize="large" style={this.styles.button} onClick={this.login}>Log In</Button>
                 </form>
+                <div>You can login using <strong>test@example.com</strong> and <strong>password</strong></div>
             </div>
         );
     }
